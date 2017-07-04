@@ -154,6 +154,7 @@ var core = (function() {
     };
 
     var fin = function() {
+        crono.actOrDeact();
         user.addResults(); // add results
         var volver = confirm("volver a jugar?");
         if (volver) {
