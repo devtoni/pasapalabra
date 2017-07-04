@@ -7,7 +7,7 @@ In this project we have had to apply the basics learned in the modules of Javasc
 
 ![Alt Text](http://res.cloudinary.com/drenzfi8m/image/upload/v1499201920/gif_pasapalabra3_bstzlf.gif)
 
-You can test the game here -> https://devtoni.github.io/skylab-precourse/pasapalabra/
+You can test the game here -> https://devtoni.github.io/pasapalabra
 
 #### TO-DO
 
