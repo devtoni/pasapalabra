@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="game">
+            <div class="box-game">
+                <div class="header">
+                    <h1>pasapalabra</h1>
+                </div>
+                <div class="points-bar">
+                    <span class="circle green" id="aciertos">0</span>
+                    <span class="circle red" id="fallos">0</span>
+                    <span class="circle blue" id="restante">27</span>
+                </div>
+                <div class="start">
+                    <div class="crono">
+                        <span id="crono" class="crono-timer"></span>
+                    </div>
+                    <form>
+                        <input type="button" value="EMPEZAR" class="btn btn-start" id="startGame">
+                    </form>
+                </div>
+                <div class="circle-of-words">
+                    <div class="pregunta">
+                        <p id="pregunta"></p>
+                    </div>
+                    <a href='#' class='circle deg0' data-letter="F"><span>F</span></a>
+                    <a href='#' class='circle deg13' data-letter="G"><span>G</span></a>
+                    <a href='#' class='circle deg27' data-letter="H"><span>H</span></a>
+                    <a href='#' class='circle deg41' data-letter="I"><span>I</span></a>
+                    <a href='#' class='circle deg54' data-letter="J"><span>J</span></a>
+                    <a href='#' class='circle deg68' data-letter="K"><span>K</span></a>
+                    <a href='#' class='circle deg82' data-letter="L"><span>L</span></a>
+                    <a href='#' class='circle deg96' data-letter="M"><span>M</span></a>
+                    <a href='#' class='circle deg110' data-letter="N"><span>N</span></a>
+                    <a href='#' class='circle deg124' data-letter=Ñ><span>Ñ</span></a>
+                    <a href='#' class='circle deg137' data-letter="O"><span>O</span></a>
+                    <a href='#' class='circle deg151' data-letter="P"><span>P</span></a>
+                    <a href='#' class='circle deg165' data-letter="Q"><span>Q</span></a>
+                    <a href='#' class='circle deg179' data-letter="R"><span>R</span></a>
+                    <a href='#' class='circle deg193' data-letter="S"><span>S</span></a>
+                    <a href='#' class='circle deg207' data-letter="T"><span>T</span></a>
+                    <a href='#' class='circle deg220' data-letter="U"><span>U</span></a>
+                    <a href='#' class='circle deg234' data-letter="V"><span>V</span></a>
+                    <a href='#' class='circle deg248' data-letter="W"><span>W</span></a>
+                    <a href='#' class='circle deg262' data-letter="X"><span>X</span></a>
+                    <a href='#' class='circle deg276' data-letter="Y"><span>Y</span></a>
+                    <a href='#' class='circle deg290' data-letter="Z"><span>Z</span></a>
+                    <a href='#' class='circle deg303' data-letter="A"><span>A</span></a>
+                    <a href='#' class='circle deg317' data-letter="B"><span>B</span></a>
+                    <a href='#' class='circle deg331' data-letter="C"><span>C</span></a>
+                    <a href='#' class='circle deg345' data-letter="D"><span>D</span></a>
+                    <a href='#' class='circle deg360' data-letter="E"><span>E</span></a>
+                </div>
+                <div class="answer">
+                    <form>
+                        <input type="text" placeholder="Escribe aquí tu respuesta" id="answer">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="data">
+            <div class="name" id="box">
+                <div class="header">
+                    <h3>Escribe tu nombre</h3>
+                </div>
+                <div class="">
+                    <input type="text" id="name" class="answer" tabindex="-1">
+                </div>
+            </div>
+            <div class="table" id="tableBox">
+                <table id="table">
+                    <tr>
+                        <th>Posición</th>
+                        <th>Nombre</th>
+                        <th>Resultado</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/dynamics.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/crono.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* components */
+
+.btn {
+    cursor: pointer;
+    padding: 0.7em;
+    margin: 1em 0;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+}
+
+.btn-start {
+    transition: .2s ease-out;
+}
+
+.btn-start:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+.circle {
+    position: absolute;
+    display: block;
+    margin-top: 3px;
+    color: #fff;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #6db3f2;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+/* inputs */
+
+input[type="text"] {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5em;
+    text-transform: uppercase;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+
+/* style colors */
+
+.red {
+    background: #f44336;
+}
+
+.blue {
+    background: #2196f3;
+}
+
+.green {
+    background: #4caf50;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+}
+
+th {
+    background: #2196f3;
+    color: #FFF;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 2em 0;
+}
+
+tr {
+    background: #F4F7F8;
+}
+
+td {
+    padding: 1em;
+    width: 33.33%;
+}
+
+
+/* crono */
+
+.crono-timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* containers */
+
+.container {
+    background: palegoldenrod;
+    display: flex;
+    min-height: 100vh;
+}
+
+.game,
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    padding: 1em;
+}
+
+.game > *,
+.data > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.37);
+}
+
+.box-game {
+    width: 500px;
+    background-color: #fff;
+}
+
+.box-game > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: #2196f3;
+    padding: 1em 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.points-bar {
+    padding: 1em;
+    background: orange;
+}
+
+.points-bar span {
+    position: relative;
+    display: inline-block;
+    margin-right: 0.5em;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+}
+
+.start {
+    justify-content: space-around;
+}
+
+.name,
+.table {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 500px;
+}
+
+.name div {
+    width: 100%;
+}
+
+.name input {
+    padding: 1em;
+}
+
+.answer {
+    padding-bottom: 1em;
+}
+
+.answer input {
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.answer input:focus {
+    border-bottom-color: #ff9800;
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.answer input::placeholder {
+    font-size: 0.8rem;
+}
+
+.pregunta {
+    width: 300px;
+}
+
+.circle-of-words {
+    height: 400px;
+}
+
+
+/* Dynamic classes */
+
+.show {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/* position for every letter*/
+
+.deg0 {
+    transform: translate(170px);
+}
+
+.deg13 {
+    transform: rotate(13.3deg) translate(170px) rotate(-13.3deg);
+}
+
+.deg27 {
+    transform: rotate(26.7deg) translate(170px) rotate(-26.7deg);
+}
+
+.deg41 {
+    transform: rotate(40deg) translate(170px) rotate(-40deg);
+}
+
+.deg54 {
+    transform: rotate(53.3deg) translate(170px) rotate(-53.3deg);
+}
+
+.deg68 {
+    transform: rotate(66.7deg) translate(170px) rotate(-66.7deg);
+}
+
+.deg82 {
+    transform: rotate(80deg) translate(170px) rotate(-80deg);
+}
+
+.deg96 {
+    transform: rotate(93.3deg) translate(170px) rotate(-93.3deg);
+}
+
+.deg110 {
+    transform: rotate(106.6deg) translate(170px) rotate(-106.6deg);
+}
+
+.deg124 {
+    transform: rotate(120deg) translate(170px) rotate(-120deg);
+}
+
+.deg137 {
+    transform: rotate(133.3deg) translate(170px) rotate(-133.3deg);
+}
+
+.deg151 {
+    transform: rotate(146.6deg) translate(170px) rotate(-146.6deg);
+}
+
+.deg165 {
+    transform: rotate(160deg) translate(170px) rotate(-160deg);
+}
+
+.deg179 {
+    transform: rotate(173.3deg) translate(170px) rotate(-173.3deg);
+}
+
+.deg193 {
+    transform: rotate(186.6deg) translate(170px) rotate(-186.6deg);
+}
+
+.deg207 {
+    transform: rotate(200deg) translate(170px) rotate(-200deg);
+}
+
+.deg220 {
+    transform: rotate(213.3deg) translate(170px) rotate(-213.3deg);
+}
+
+.deg234 {
+    transform: rotate(226.6deg) translate(170px) rotate(-226.6deg);
+}
+
+.deg248 {
+    transform: rotate(239.9deg) translate(170px) rotate(-239.9deg);
+}
+
+.deg262 {
+    transform: rotate(253.3deg) translate(170px) rotate(-253.3deg);
+}
+
+.deg276 {
+    transform: rotate(266.6deg) translate(170px) rotate(-266.6deg);
+}
+
+.deg290 {
+    transform: rotate(279.9deg) translate(170px) rotate(-279.9deg);
+}
+
+.deg303 {
+    transform: rotate(293.3deg) translate(170px) rotate(-293.3deg);
+}
+
+.deg317 {
+    transform: rotate(306.6deg) translate(170px) rotate(-306.6deg);
+}
+
+.deg331 {
+    transform: rotate(319.9deg) translate(170px) rotate(-319.9deg);
+}
+
+.deg345 {
+    transform: rotate(333.3deg) translate(170px) rotate(-333.3deg);
+}
+
+.deg360 {
+    transform: rotate(346.6deg) translate(170px) rotate(-346.6deg);
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .container > * {
+        width: 90%;
+    }
+    .box-game,
+    .name,
+    .table {
+        width: 90%;
+    }
+    .box-game {
+        min-width: 400px;
+    }
+    .circle-of-words {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .box-game,
+    .name,
+    .table {
+        width: 90%;
+    }
+    .box-game {
+        min-width: 400px;
+    }
+    .circle-of-words {
+        min-height: 400px;
+    }
+}
